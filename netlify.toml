@@ -1,0 +1,18 @@
+[functions]
+  directory = "netlify/functions"
+[build]
+  publish = "."
+[[redirects]]
+  from = "/api/solar"
+  to = "/.netlify/functions/solar"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/api/routes"
+  to = "/.netlify/functions/routes"
+  status = 200
+  force = true
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache"
