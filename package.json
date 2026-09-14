@@ -1,1 +1,12 @@
-{"name":"ceo-fotovoltaicos-v64","private":true,"version":"64.0.0","dependencies":{"sharp":"^0.33.5"}}
+{
+  "name": "ceo-fotovoltaicos-v64-cloudrun",
+  "private": true,
+  "version": "64.1.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sharp": "^0.33.5"
+  }
+}
